@@ -1,9 +1,7 @@
 package com.sp.user.service;
 
 import com.sp.user.data.model.Account;
-import com.sp.user.data.model.User;
 import com.sp.user.repository.AccountRepo;
-import com.sp.user.repository.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

@@ -1,14 +1,13 @@
 package com.sp.user.controller;
 
-import com.sp.user.data.model.User;
-import com.sp.user.service.LoginService;
 import com.sp.user.data.model.Account;
+import com.sp.user.service.LoginService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
-
-import java.util.Optional;
 
 @RestController
 public class LoginController extends BaseController {

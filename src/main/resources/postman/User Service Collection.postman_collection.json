@@ -59,7 +59,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"username\": \"user1\",\r\n    \"password\": \"abcd\"\r\n}"
+							"raw": "{\r\n    \"username\": \"user1\",\r\n    \"password\": \"abcde\"\r\n}"
 						},
 						"url": {
 							"raw": "{{url}}/api/login",
@@ -77,6 +77,21 @@
 				{
 					"name": "post-user",
 					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "abcde",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "user1",
+									"type": "string"
+								}
+							]
+						},
 						"method": "POST",
 						"header": [
 							{
@@ -118,6 +133,21 @@
 				{
 					"name": "get-user",
 					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "abcde",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "user1",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
 						"header": [
 							{
@@ -132,14 +162,14 @@
 							}
 						],
 						"url": {
-							"raw": "{{url}}/api/users/2",
+							"raw": "{{url}}/api/users/1",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
 								"api",
 								"users",
-								"2"
+								"1"
 							]
 						}
 					},

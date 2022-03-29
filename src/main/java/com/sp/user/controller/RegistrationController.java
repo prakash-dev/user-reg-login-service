@@ -1,8 +1,7 @@
 package com.sp.user.controller;
 
-import com.sp.user.data.model.User;
-import com.sp.user.service.RegistrationService;
 import com.sp.user.data.model.Account;
+import com.sp.user.service.RegistrationService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
